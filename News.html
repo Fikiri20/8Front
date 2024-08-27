@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/news.css">
+    </head>
+    <body>
+        
+        <!-- header start-->
+        <header class="header">
+
+          <a href="index.html" class="logo"><h2>8TECH SOLUTIONS</h2></a>
+
+            <input type="checkbox" id="check">
+
+            <label for="check" class="icons">
+                <i class="fa fa-bars" id="menu-icon"></i>
+                <i class="fa fa-times" id="close-icon"></i>
+            </label>
+
+            <nav class="navbar">
+				<a href="Studentsguidelines.html" style="--i:0;">Student Guidelines</a>
+                <a href="HousingPlatform.html" style="--i:1;">Housing Platform</a>
+                <a href="Networkinghub.html" style="--i:2;">Networking Hub</a>
+                <a href="Academics.html" style="--i:3;">Academics</a>
+            </nav>
+        </header>
+        <!-- header end-->
+
+        <div class="news">
+
+            <!-- search start-->
+			<div class="news-search">
+				<h1>SEARCH FOR <span>NEWS</span></h1>
+			<div class="search-container">
+				<input type="text" class="search-box" placeholder="Search...">
+				<button class="search-btn">Search</button>
+			</div>
+			</div>
+            <!-- search end-->
+
+
+         <!--blog start -->
+		<section id="blog" class="blog" >
+			<div class="container">
+
+				<div class="blog-content">
+					<div class="row">
+
+                        <!-- news start -->
+						<div class="col-md-4 col-sm-6">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img">
+									<img src="C:\Users\USER\Pictures\4nc.jpg" alt="blog image">
+								</div>
+								<div class="single-blog-item-txt">
+									<h2><a href="#">How to find your Desired Place more quickly</a></h2>
+									<hr>
+									<h4>posted <span>by</span> <a href="#">admin</a> August 2024</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna.
+									</p>
+								</div>
+							</div>
+						</div>
+                        <!-- news end -->
+
+                        <!-- news start -->
+						<div class="col-md-4 col-sm-6">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img">
+									<img src="C:\Users\USER\Pictures\4nc.jpg" alt="blog image">
+								</div>
+								<div class="single-blog-item-txt">
+									<h2><a href="#">How to find your Desired Place more quickly</a></h2>
+									<hr>
+									<h4>posted <span>by</span> <a href="#">admin</a> July 2024</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna.
+									</p>
+								</div>
+							</div>
+						</div>
+                        <!-- news end -->
+
+
+                        <!-- news start -->
+						<div class="col-md-4 col-sm-6">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img">
+									<video controls>
+                                        <source src="C:\Users\USER\Videos\vid2.mp4" type="video/mp4">
+                                        <source src="C:\Users\USER\Videos\vid2.ogg" type="video/ogg">
+                                    </video>
+								</div>
+								<div class="single-blog-item-txt">
+									<h2><a href="#">How to find your Desired Place more quickly</a></h2>
+									<hr>
+									<h4>posted <span>by</span> <a href="#">admin</a> June 2024</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna.
+									</p>
+								</div>
+							</div>
+						</div>
+                        <!-- news end -->
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--blog end -->
+	</div>
+
+        <!-- footer start -->
+		<footer class="footer">
+            <ul class="footer-icons">
+                <li>
+                    <a href="Clubs.html" title="Club">
+                        <i class="fas fa-users"></i>
+                        <span class="text">Clubs</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Religiousfaiths.html" title="Society">
+                        <i class="worship-icon fas fa-pray"></i>
+                        <span class="text">Religious Faiths</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Associations.html" title="Association">
+                        <i class="fas fa-handshake"></i>
+                        <span class="text">Associations</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="News.html" title="News">
+                        <i class="fas fa-newspaper"></i>
+                        <span class="text">News</span>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <!-- footer end -->
+      
+
+     <script>
+
+                        var nextBtn = document.querySelector('.next'),
+                prevBtn = document.querySelector('.prev'),
+                carousel = document.querySelector('.carousel'),
+                list = document.querySelector('.list'), 
+                item = document.querySelectorAll('.item'),
+                runningTime = document.querySelector('.carousel .timeRunning') 
+
+            let timeRunning = 3000 
+            let timeAutoNext = 7000
+
+            nextBtn.onclick = function(){
+                showSlider('next')
+            }
+
+            prevBtn.onclick = function(){
+                showSlider('prev')
+            }
+
+            let runTimeOut 
+
+            let runNextAuto = setTimeout(() => {
+                nextBtn.click()
+            }, timeAutoNext)
+
+
+            function resetTimeAnimation() {
+                runningTime.style.animation = 'none'
+                runningTime.offsetHeight /* trigger reflow */
+                runningTime.style.animation = null 
+                runningTime.style.animation = 'runningTime 7s linear 1 forwards'
+            }
+
+
+            function showSlider(type) {
+                let sliderItemsDom = list.querySelectorAll('.carousel .list .item')
+                if(type === 'next'){
+                    list.appendChild(sliderItemsDom[0])
+                    carousel.classList.add('next')
+                } else{
+                    list.prepend(sliderItemsDom[sliderItemsDom.length - 1])
+                    carousel.classList.add('prev')
+                }
+
+                clearTimeout(runTimeOut)
+
+                runTimeOut = setTimeout( () => {
+                    carousel.classList.remove('next')
+                    carousel.classList.remove('prev')
+                }, timeRunning)
+
+
+                clearTimeout(runNextAuto)
+                runNextAuto = setTimeout(() => {
+                    nextBtn.click()
+                }, timeAutoNext)
+
+                resetTimeAnimation() // Reset the running time animation
+            }
+
+            // Start the initial animation 
+            resetTimeAnimation()
+
+
+     </script>
+          
+    </body>
+</html>

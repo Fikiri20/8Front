@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HousingPlatform</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/housing_styles.css">
+    </head>
+    <body>
+
+        <!--header starts-->
+        <header class="header">
+
+          <a href="index.html" class="logo"><h2>8TECH SOLUTIONS</h2></a>
+
+            <input type="checkbox" id="check">
+
+            <label for="check" class="icons">
+                <i class="fa fa-bars" id="menu-icon"></i>
+                <i class="fa fa-times" id="close-icon"></i>
+            </label>
+
+            <nav class="navbar">
+				<a href="Studentsguidelines.html" style="--i:0;">Student Guidelines</a>
+                <a href="Networkinghub.html" style="--i:1;">Networking Hub</a>
+				<a href="Academics.html" style="--i:2;">Academics</a>
+                   </nav>
+            
+        </header>
+	    <!--header ends-->
+
+        <!--main content starts-->
+        <div class="housing">
+            
+			<!--search starts-->
+			<div class="house-search">
+				<h1>SEARCH FOR <span>HOSTELS</span></h1>
+			<div class="search-container">
+				<input type="text" class="search-box" placeholder="Search...">
+				<button class="search-btn">Search</button>
+			</div>
+			</div>
+			<!--search ends-->
+
+        <!--blog start -->
+		<section id="blog" class="blog" >
+			<div class="container">
+
+				<div class="blog-content">
+					<div class="row">
+
+						<!--house starts-->
+						<div class="col-md-4 col-sm-6">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img">
+									<img src="images/close-up-creative-background-with-white-shapes.jpg" alt="blog image">
+								</div>
+								<div class="single-blog-item-txt">
+									<h2><a href="house.html">How to find your Desired Place more quickly</a></h2>
+									<hr>
+									<h4><a href="#">Bedsitter</a>Ksh.7,500/month</h4>
+
+									<div class="location">
+									<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+
+									<p>Sukari</p>
+								</div>
+
+									<p>
+										Lorem ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna.
+									</p>
+
+									<div class="btn">
+										<button><a href="house.html"><span></span>More</a></button>
+										<button><a href="house.html"><span></span>Reserve</a></button>
+									</div>
+                                   <hr>
+								</div>
+							</div>
+						</div>
+						<!--house ends-->
+
+                        <!--house starts-->
+						<div class="col-md-4 col-sm-6">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img">
+									<img src="images/download.jpeg" alt="blog image">
+								</div>
+								<div class="single-blog-item-txt">
+									<h2><a href="house.html">How to find your Desired Place more quickly</a></h2>
+									<hr>
+
+									<h4><a href="#">One-Bedroom</a>Ksh.10,500/month</h4>
+
+									<p>
+										Lorem ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna.
+									</p>
+
+									<div class="btn">
+										<button><a href="house.html"><span></span>More</a></button>
+										<button><a href="house.html"><span></span>Reserve</a></button>
+									</div>
+									<hr>
+
+								</div>
+							</div>
+						</div>
+						<!-- house ends-->
+
+                        <!--house starts-->
+						<div class="col-md-4 col-sm-6">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img">
+									<img src="images/The 3 IT processes CIOs need most.jpeg" alt="blog image">
+								</div>
+								<div class="single-blog-item-txt">
+									<h2><a href="house.html">How to find your Desired Place more quickly</a></h2>
+									<hr>
+
+									<h4><a href="#">Single Room</a>Ksh.5,500/month</h4>
+
+									<p>
+										Lorem ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna.
+									</p>
+
+									<div class="btn">
+										<button><a href="house.html"><span></span>More</a></button>
+										<button><a href="house.html"><span></span>Reserve</a></button>
+									</div>
+									<hr>
+
+								</div>
+							</div>
+						</div>
+						<!--house ends-->
+						
+					</div>
+				</div>
+			</div><!--/.container-->
+			
+		</section><!--/.blog-->
+		<!--blog end -->
+
+		<!--footer starts-->
+		<footer class="footer">
+			<ul class="footer-icons">
+				<li>
+					<a href="Clubs.html" title="Club">
+						<i class="fas fa-users"></i>
+						<span class="text">Clubs</span>
+					</a>
+				</li>
+				<li>
+					<a href="Religiousfaiths.html" title="Society">
+						<i class="worship-icon fas fa-pray"></i>
+						<span class="text">Religious Faiths</span>
+					</a>
+				</li>
+				<li>
+					<a href="Associations.html" title="Association">
+						<i class="fas fa-handshake"></i>
+						<span class="text">Associations</span>
+					</a>
+				</li>
+				<li>
+					<a href="News.html" title="News">
+						<i class="fas fa-newspaper"></i>
+						<span class="text">News</span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	  <!--footer ends-->
+	  
+	</div>
+	<!--main content ends-->
+
+
+
+        <script>
+            document.querySelector('.search-btn').onclick = function() {
+    var query = document.querySelector('.search-box').value;
+    window.open('https://www.bing.com/search?q=' + encodeURIComponent(query));
+};
+        </script>
+          
+    </body>
+</html>
